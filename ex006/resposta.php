@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Resultado do Processamento</h1>
     <main>
+        <h1>Resultado do Processamento</h1>
+        <p>
         <?php 
 
         $n = $_REQUEST["num"] ?? 0;
@@ -18,9 +19,10 @@
         echo "<br> O seu antecessor é <strong>$a</strong>";
         echo "<br> O seu sucessor é <strong>$s</strong>"
         ?>
-         <p>
-        <p><a href="javascript:history.go(-1)">Voltar a página anterior</a></p>
+         
+        
     </p>
+    <button onclick="javascript:history.go(-1)">&#x2B05; Voltar</button>
     </main>
 
 </body>
